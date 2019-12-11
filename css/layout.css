@@ -1,0 +1,21 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 767px) {
+    html{
+    background-color: blue;
+    }
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    html{
+        background-color: yellow;
+    }
+}
+    /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+    html{
+        background-color: black;
+        color: red;
+        font-size: 150%;
+    }
+}
