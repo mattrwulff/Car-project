@@ -17,5 +17,7 @@
         background-color: black;
         color: red;
         font-size: 150%;
+        background-image: url(../images/fire.jpg);
+        background-size: cover;
     }
 }
