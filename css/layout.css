@@ -22,20 +22,46 @@
 @media only screen and (min-width: 992px) {
     
     html{
-        background-color: black;
         color: red;
         font-size: 150%;
         background-image: url(../images/fire-2.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        
         height: 35em;
     }
-    .logo img{
+    .nav{
+        margin: 0px;
+        top:0px;
+        background: grey;
+        position: fixed;
+        width: 100%;
+        font-family: 'dodge';
+        color: white
+        
+    }
+    .nav a {
+        padding-top: 4px;
+    padding-bottom: 6px;
+    text-decoration: none;
+   
+    
+    margin-top:auto;
+    margin-bottom: auto;
+    }
+    
+        
+        
+    .nav img{
         width: 50px;
         height: 50px;
+        padding-left: 100px;
     }
-    body{
-        margin-left: 150px;
-        margin-right: 150px;
+    .grid-container{
+        margin-left: 50px;       
+        margin-right: 50px;
+
+    }
+    .main{
+        margin-top:90px
     }
 }
