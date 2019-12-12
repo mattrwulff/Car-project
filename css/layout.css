@@ -30,12 +30,18 @@
         background-repeat: no-repeat;
         height: 35em;
     }
-    .logo img{
-        width: 50px;
-        height: 50px;
-    }
     body{
         margin-left: 150px;
         margin-right: 150px;
     }
+    header{
+        font-family: 'dodge';
+        text-align: center;
+        font-size: 150%;
+    }
+    .logo img{
+        width: 50px;
+        height: 50px;
+    }
+    
 }
