@@ -24,7 +24,7 @@
     html{
         color: red;
         font-size: 150%;
-        background-image: url(../images/fire-2.jpg);
+        
         background-size: cover;
         
         height: 35em;
@@ -43,8 +43,7 @@
         padding-top: 4px;
     padding-bottom: 6px;
     text-decoration: none;
-   
-    
+
     margin-top:auto;
     margin-bottom: auto;
     }
@@ -59,8 +58,49 @@
     .grid-container{
         margin-left: 50px;       
         margin-right: 50px;
-
     }
+    body {
+        margin: 40px;
+      }
+      
+      .wrapper {
+              display: grid;
+            grid-gap: 10px;
+              grid-template-columns: 1fr 1fr 1fr;
+              background-color: #fff;
+              color: #444;
+              
+          }
+        .box {
+            
+            color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        .a {
+            grid-column: 1 / span 3;
+            grid-row: 1 ;
+            background-image: url("../images/vs4.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 100vh;
+            font-family: 'Roboto', sans-serif;
+
+        }
+        .a h1{
+            text-shadow: 2px 2px 0px rgb(121, 2, 2);
+            font-family: 'dodge';
+        }
+        .b {
+            grid-column: 3 ;
+            grid-row: 2 ;
+        }
+        
+        .d {
+            grid-column: 1 / span 2 ;
+            grid-row: 2 ;
+        }
     .main{
         margin-top:90px
     }
