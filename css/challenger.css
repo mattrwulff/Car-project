@@ -84,3 +84,93 @@ header > a > h1{
     top: 25em;
     text-align: center;
 }
+.one > a > h2{
+    position: absolute;
+    list-style: none;
+    display: flexbox; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    color: white;
+    top: 2em;
+    left: -26.5em;
+    font-family: 'blazed';
+    font-size: 90%;
+}
+.one > a > h2:hover{
+    color: red;
+}
+.one > img{
+    position: relative;
+    height: 2em;
+    width: 2em;
+    left: -2em;
+    top: 2em;
+}
+.one:hover{
+    -ms-transform: translate(350px, 0px);
+    -webkit-transform: translate(350px, 0px);
+    transform: translate(350px, 0px);
+    transition: 3s;
+}
+.two > a > h2{
+    position: relative;
+    list-style: none;
+    display: flexbox; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    color: white;
+    top: 4.7em;
+    left: -16em;
+    font-family: 'blazed';
+    font-size: 90%;
+}
+.two > a > h2:hover{
+    color: red;
+}
+.two > img{
+    position: relative;
+    height: 2em;
+    width: 2em;
+    left: -2em;
+    top: 2em;
+}
+.two:hover{
+    -ms-transform: translate(200px, 0px);
+    -webkit-transform: translate(200px, 0px);
+    transform: translate(200px, 0px);
+    transition: 3s;
+}
+.three > a > h2{
+    position: relative;
+    list-style: none;
+    display: flexbox; /*inline, block, inline-block, none*/
+    flex-direction: column;/*column, row-reverse, column reverse*/
+    flex-wrap: wrap;/*no-wrap, wrap-reverse, wrap*/
+    justify-content: space-evenly;/*flex-end, center, space-evenly,space-between, space-around, flex-start*/
+    align-content: space-evenly;/*flex-end, center, space-between,flex-start, space-evenly, space-around, stretch*/
+    color: white;
+    top: 4.7em;
+    left: -12em;
+    font-family: 'blazed';
+    font-size: 90%;
+}
+.three > a > h2:hover{
+    color: red;
+}
+.three > img{
+    position: relative;
+    height: 2em;
+    width: 2em;
+    left: -2em;
+    top: 2em;
+}
+.three:hover{
+    -ms-transform: translate(200px, 0px);
+    -webkit-transform: translate(200px, 0px);
+    transform: translate(200px, 0px);
+    transition: 3s;
+}
