@@ -3,7 +3,11 @@
     src: url(../css/font/dodge.ttf);
 }@font-face{
     font-family: 'blazed';
-    src: url(../css/font/dodge.ttf);
+    src: url(../css/font/blazed.ttf);
+}
+@font-face{
+    font-family: 'dodge2';
+    src: url(../css/font/DODG5.TTF);
 }
 
 /* Extra small devices (phones, 600px and down) */
@@ -25,24 +29,27 @@
         color: red;
         font-size: 150%;
         background-color: black;
+        scroll-behavior: smooth;
     }
     .nav{
         margin: 0px;
         top:0px;
-        background: grey;
+        background: rgb(160, 160, 160);
         position: fixed;
         width: 100%;
         font-family: 'dodge';
-        color: white
-        
+        color: white;
+        z-index: 2;
     }
     .nav a {
         padding-top: 4px;
     padding-bottom: 6px;
     text-decoration: none;
-
+    color: white;
     margin-top:auto;
     margin-bottom: auto;
+    text-shadow: 2px 2px 0px rgb(121, 2, 2);
+            
     }
     .nav img{
         width: 50px;
@@ -67,33 +74,98 @@
           }
         .box {
             
-            color: #fff;
+            
             border-radius: 5px;
             padding: 20px;
             font-size: 150%;
         }
+        
         .a {
             grid-column: 1 / span 3;
-            grid-row: 1 ;
+            grid-row: 1;
             background-image: url("../images/vs4.jpg");
             background-attachment: fixed;
             background-size: cover;
-            height: 100vh;
+            height: 95vh;
+            color: white;
             font-family: 'Roboto', sans-serif;
+            border-bottom: 3px solid red;
 
         }
         .a h1{
             text-shadow: 2px 2px 0px rgb(121, 2, 2);
             font-family: 'dodge';
         }
-        .b {
-            grid-column: 3 ;
-            grid-row: 2 ;
+        .blank{
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            height: 100px;  
         }
-        
+        .a2{
+            position: absolute;
+            left:45%;
+            top:90%;
+            background-color: transparent;
+            border: 2px solid red;
+            transition: 0.5s;
+            border-radius: 30%;
+            padding-left: 20px;
+            padding-right: 20px;
+            z-index: 1;
+        }
+        .a2 a{
+            text-decoration: none;
+            color: white;
+        }
+        .a2:hover{
+            background-color: red;
+            transition: .5s;
+        }
+        .a1{
+            grid-column: 1 / span 3;
+            grid-row: 3 ;
+            text-align: center;
+            font-family: 'dodge';
+        }
+        .a1 h1{
+            font-size: 150%;
+            
+        }
+        .b {
+            grid-column: 2 / span 3 ;
+            grid-row: 4 ;
+            
+        }
+        .b iframe{
+            float: right;
+        }
         .d {
+            grid-column: 1  ;
+            grid-row: 4 ;
+            color: rgb(104, 104, 104);
+        }
+        .e1{
+            grid-column: 1 / span 3 ;
+            grid-row: 5 ;
+            text-align: center;
+            font-family: 'dodge';
+        }
+        .e1 h1{
+            font-size: 150%;
+            
+        }
+        .e{
             grid-column: 1 / span 2 ;
-            grid-row: 2 ;
+            grid-row: 6 ;
+        }
+        .f{
+            grid-column: 3;
+            grid-row: 6 ;
+            color: rgb(104, 104, 104);
+        }
+        footer{
+            grid-column: 1 / span 3;
+            grid-row: 7;
         }
     .main{
         margin-top:90px
