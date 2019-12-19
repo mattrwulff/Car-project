@@ -11,19 +11,327 @@
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 799px) {
     html{
-    background-color: blue;
+        color: red;
+        font-size: 150%;
+        background-color: black;
+        scroll-behavior: smooth;
+    }
+    .nav{
+        display: block;
+        margin: 0px;
+        top:0px;
+        background: rgb(160, 160, 160);
+        grid-column: 1;
+            grid-row: 1;
+        
+        width: 100%;
+        height: 250px;
+        font-family: 'dodge';
+        color: white;
+        z-index: 2;
+    }
+    .nav a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: white;
+    
+    text-shadow: 2px 2px 0px rgb(121, 2, 2);
+            
+    }
+    .srt{
+        font-size: 150%;
+    }
+    .nav img{
+        width: 90px;
+        height: 90px;
+        padding-left: 100px;
+    }
+    .grid-container{
+        margin-left: 50px;       
+        margin-right: 50px;
+    }
+    body {
+        margin: 40px;
+      }
+      
+      .wrapper {
+              display: grid;
+            
+              grid-template-columns: 1fr;
+              background-color: #fff;
+              color: #444;
+              
+          }
+        .box {
+            
+            
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        
+        .a {
+            grid-column: 1;
+            grid-row: 2;
+            background-color: darkgrey;
+            background-attachment: fixed;
+            
+            width: 100%;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            border-bottom: 3px solid red;
+
+        }
+        .a h1{
+            text-shadow: 2px 2px 0px rgb(121, 2, 2);
+            font-family: 'dodge';
+            font-size: 100%;
+        }
+        .blank{
+            grid-column: 1;
+            grid-row: 3;
+            height: 60px;  
+        }
+        .a2{
+            opacity: 0;
+        }
+        
+        
+        .a1{
+            grid-column: 1;
+            grid-row: 4 ;
+            text-align: center;
+            font-family: 'dodge';
+        }
+        .a1 h1{
+            font-size: 150%;
+            
+        }
+        .b {
+            grid-column: 1 ;
+            grid-row: 5 ;
+            
+        }
+        .b iframe{
+            width: 360px;
+            height: 215px;
+            float: left;
+        }
+        .d {
+            grid-column: 1;
+            grid-row: 6 ;
+            color: rgb(104, 104, 104);
+            text-align: center;
+        }
+        .e1{
+            grid-column: 1;
+            grid-row: 7 ;
+            
+            font-family: 'dodge';
+        }
+        .e1 h1{
+            font-size: 100%;
+            float: right ;
+        }
+        .e{
+            grid-column: 1;
+            grid-row: 8 ;
+        }
+        .e iframe{
+            width:360px;
+            height: 215px;
+            float:left;
+        }
+        .f{
+            grid-column: 1;
+            grid-row: 9 ;
+            color: rgb(104, 104, 104);
+            text-align: center;
+        }
+        footer{
+            grid-column: 1;
+            grid-row: 10;
+            background-color: rgb(180, 180, 180);
+            display: block;
+            justify-content: space-evenly;
+            height: 90px;
+            width: 100%;
+            align-items: center;
+        }
+        footer a{
+            color: rgb(65, 65, 65);
+            text-decoration: none;
+            font-size: 150%;
+        }
+        footer a:hover{
+            color: rgb(0, 0, 0);
+        }
+    .main{
+        margin-top:90px
     }
 }
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
     html{
-        background-color: yellow;
+        color: red;
+        font-size: 150%;
+        background-color: black;
+        scroll-behavior: smooth;
+    }
+    .nav{
+        margin: 0px;
+        top:0px;
+        background: rgb(160, 160, 160);
+        position: fixed;
+       
+        width: 100%;
+        height: 100px;
+        font-family: 'dodge';
+        color: white;
+        z-index: 2;
+    }
+    .nav a {
+    padding-top: 30px;
+    text-decoration: none;
+    color: white;
+    
+    text-shadow: 2px 2px 0px rgb(121, 2, 2);
+            
+    }
+    .srt{
+        font-size: 150%;
+    }
+    .nav img{
+        width: 90px;
+        height: 90px;
+        padding-left: 100px;
+    }
+    .grid-container{
+        margin-left: 50px;       
+        margin-right: 50px;
+    }
+    body {
+        margin: 40px;
+      }
+      
+      .wrapper {
+              display: grid;
+            grid-gap: 10px;
+              grid-template-columns: 1fr 1fr 1fr;
+              background-color: #fff;
+              color: #444;
+              
+          }
+        .box {
+            
+            
+            border-radius: 5px;
+            padding: 20px;
+            font-size: 150%;
+        }
+        
+        .a {
+            grid-column: 1 / span 3;
+            grid-row: 1;
+            background-image: url("../images/vs4.jpg");
+            background-attachment: fixed;
+            background-size: cover;
+            height: 95vh;
+            color: white;
+            font-family: 'Roboto', sans-serif;
+            border-bottom: 3px solid red;
+
+        }
+        .a h1{
+            text-shadow: 2px 2px 0px rgb(121, 2, 2);
+            font-family: 'dodge';
+            font-size: 200%;
+        }
+        .blank{
+            grid-column: 1 / span 3;
+            grid-row: 2;
+            height: 60px;  
+        }
+        .a2{
+            opacity: 0;
+        }
+        
+        
+        .a1{
+            grid-column: 1 / span 3;
+            grid-row: 3 ;
+            text-align: center;
+            font-family: 'dodge';
+        }
+        .a1 h1{
+            font-size: 150%;
+            
+        }
+        .b {
+            grid-column: 1 / span 3 ;
+            grid-row: 4 ;
+            
+        }
+        .b iframe{
+            width: 660px;
+            height: 515px;
+        }
+        .d {
+            grid-column: 1 / span 3  ;
+            grid-row: 5 ;
+            color: rgb(104, 104, 104);
+            text-align: center;
+        }
+        .e1{
+            grid-column: 1 / span 3 ;
+            grid-row: 6 ;
+            text-align: center;
+            font-family: 'dodge';
+        }
+        .e1 h1{
+            font-size: 150%;
+            
+        }
+        .e{
+            grid-column: 1 / span 3 ;
+            grid-row: 7 ;
+        }
+        .e iframe{
+            width: 660px;
+            height: 515px;
+        }
+        .f{
+            grid-column: 1/ span 3;
+            grid-row: 8 ;
+            color: rgb(104, 104, 104);
+            text-align: center;
+        }
+        footer{
+            grid-column: 1 / span 3;
+            grid-row: 9;
+            background-color: rgb(180, 180, 180);
+            display: flex;
+            justify-content: space-evenly;
+            height: 90px;
+            align-items: center;
+        }
+        footer a{
+            color: rgb(65, 65, 65);
+            text-decoration: none;
+            font-size: 150%;
+        }
+        footer a:hover{
+            color: rgb(0, 0, 0);
+        }
+    .main{
+        margin-top:90px
     }
 }
+
     /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1200px) {
     
     html{
         color: red;
@@ -37,12 +345,13 @@
         background: rgb(160, 160, 160);
         position: fixed;
         width: 100%;
+        
         font-family: 'dodge';
         color: white;
         z-index: 2;
     }
     .nav a {
-        padding-top: 4px;
+        padding-top: 6px;
     padding-bottom: 6px;
     text-decoration: none;
     color: white;
@@ -95,11 +404,13 @@
         .a h1{
             text-shadow: 2px 2px 0px rgb(121, 2, 2);
             font-family: 'dodge';
+            font-size: 200%;
         }
         .blank{
             grid-column: 1 / span 3;
             grid-row: 2;
-            height: 100px;  
+            height: 60px;  
+            
         }
         .a2{
             position: absolute;
@@ -138,6 +449,8 @@
         }
         .b iframe{
             float: right;
+            width:860px;
+            height: 615px;
         }
         .d {
             grid-column: 1  ;
@@ -158,6 +471,10 @@
             grid-column: 1 / span 2 ;
             grid-row: 6 ;
         }
+        .e iframe{
+            width: 860px;
+            height: 615px;
+        }
         .f{
             grid-column: 3;
             grid-row: 6 ;
@@ -166,6 +483,19 @@
         footer{
             grid-column: 1 / span 3;
             grid-row: 7;
+            background-color: rgb(180, 180, 180);
+            display: flex;
+            justify-content: space-evenly;
+            height: 90px;
+            align-items: center;
+        }
+        footer a{
+            color: rgb(65, 65, 65);
+            text-decoration: none;
+            font-size: 150%;
+        }
+        footer a:hover{
+            color: rgb(0, 0, 0);
         }
     .main{
         margin-top:90px
