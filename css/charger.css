@@ -33,31 +33,36 @@ html{
 
 
 html{
-    color: red;
+    color: white;
     font-size: 150%;
-    background-color: black;  
+    background-color: rgb(36, 35, 35);  
 }
 .logo{
-    width: 50px;
+    width: 2.5em;
+    height: 2.5em;
     float: left;
 }
 nav{
-    position: fixed;
     width: 100%;
-    margin: 0px;
-    top:0px;
+    height: 2em;
     background: rgb(85, 85, 85);
     font-family: 'dodge';
     color: white;
     text-align: right;
     padding: 20px;
+    border-bottom: white solid 2px;
     
 }
 nav a {
     padding-right: 50px;
     padding-top: 4px;
     text-decoration: none;  
-    color: black;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+nav a:hover{
+    color: red;
+    text-shadow: 1px 1px 2px black;
 }
 nav img{
     width: 50px;
@@ -67,36 +72,100 @@ nav img{
     margin-top: 75px;
     margin-right: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
     justify-content: space-evenly;
 }
+.button {
+    position:relative;
+    padding: 15px 25px;
+    font-size: 32px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    background-color: grey ;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px lightgrey;
+
+    animation: appear 2s infinite;
+}
+
+@keyframes appear{
+    0%  { visibility: hidden; }
+    100%  {visibility: visible;}
+}
+  
+.button:hover {
+    background-color: rgb(85, 85, 85);
+    color: red;
+    text-shadow: 1px 1px 2px black;
+}
+  
+.button:active {
+    background-color: rgb(85, 85, 85);
+    box-shadow: 0 5px white;
+    transform: translateY(4px);
+}
+h1{
+    text-align: center;
+}
+p{
+    visibility: hidden;
+}
 .item-1{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border: 2px solid red;
+    grid-column: 1;
+    grid-row: 1;
+    
+}
+.item-1 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 12em;
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    border: 8px solid rgb(189, 30, 30);
 }
 .item-2{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    border: 2px solid red;
+    grid-column: 2;
+    grid-row: 1;
+    
+}
+.item-2 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 12em;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    border: 8px solid rgb(189, 30, 30);
 }
 .item-3{
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    border: 2px solid red;
+    
+}
+.item-3 img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 12em;
+    grid-column: 1 / span 2;
+    grid-row: 3;
+    border: 8px solid rgb(189, 30, 30);
 }
 footer{
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-column: 1 / span 3;
+    grid-row: 4;
 }
 
 
