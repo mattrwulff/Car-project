@@ -52,14 +52,12 @@
         margin-left: 50px;       
         margin-right: 50px;
     }
-    body {
-        margin: 40px;
-      }
+    
       
       .wrapper {
               display: grid;
             
-              grid-template-columns: 1fr;
+              grid-template-columns: 1fr 1fr 1fr;
               background-color: #fff;
               color: #444;
               
@@ -67,18 +65,17 @@
         .box {
             
             
-            border-radius: 5px;
             padding: 20px;
             font-size: 150%;
         }
         
         .a {
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 2;
-            background-color: darkgrey;
+            background-image: url("../images/red-logo.png");
             background-attachment: fixed;
             
-            width: 100%;
+            width: 91%;
             color: white;
             font-family: 'Roboto', sans-serif;
             border-bottom: 3px solid red;
@@ -90,7 +87,7 @@
             font-size: 100%;
         }
         .blank{
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 3;
             height: 60px;  
         }
@@ -100,17 +97,17 @@
         
         
         .a1{
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 4 ;
             text-align: center;
             font-family: 'dodge';
         }
         .a1 h1{
-            font-size: 150%;
+            font-size: 100%;
             
         }
         .b {
-            grid-column: 1 ;
+            grid-column: 1  / span 3;
             grid-row: 5 ;
             
         }
@@ -120,13 +117,13 @@
             float: left;
         }
         .d {
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 6 ;
             color: rgb(104, 104, 104);
             text-align: center;
         }
         .e1{
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 7 ;
             
             font-family: 'dodge';
@@ -136,7 +133,7 @@
             float: right ;
         }
         .e{
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 8 ;
         }
         .e iframe{
@@ -145,13 +142,13 @@
             float:left;
         }
         .f{
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 9 ;
             color: rgb(104, 104, 104);
             text-align: center;
         }
         footer{
-            grid-column: 1;
+            grid-column: 1 / span 3;
             grid-row: 10;
             background-color: rgb(180, 180, 180);
             display: block;
@@ -187,7 +184,7 @@
         position: fixed;
        
         width: 100%;
-        height: 100px;
+        height: 5em;
         font-family: 'dodge';
         color: white;
         z-index: 2;
@@ -395,6 +392,7 @@
             background-image: url("../images/vs4.jpg");
             background-attachment: fixed;
             background-size: cover;
+           
             height: 95vh;
             color: white;
             font-family: 'Roboto', sans-serif;
